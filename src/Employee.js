@@ -6,7 +6,7 @@ const Employee = ()=>{
     //useEffect will call API only once since 2nd parm is []
     useEffect(()=>{
         console.log("--------useEffect------");
-        axios.get('http://universities.hipolabs.com/search?country=United+Kingdom').then((emp)=>{
+        axios.get('https://universities.hipolabs.com/search?country=United+Kingdom').then((emp)=>{
             setEmployees(emp.data)
             setLoading(false)
     }).catch(error=>{
